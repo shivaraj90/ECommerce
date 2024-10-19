@@ -1,0 +1,10 @@
+com\tadigital\ecommerce\controller\UpdatePersonalDetails.class
+com\tadigital\ecommerce\customer\controller\RegistrationProcessServlet.class
+com\tadigital\ecommerce\customer\controller\LoginProcessServlet.class
+com\tadigital\ecommerce\customer\dao\UserDaoImplementation.class
+com\tadigital\ecommerce\customer\entity\User.class
+com\tadigital\ecommerce\controller\UpdatePassword.class
+com\tadigital\ecommerce\customer\entity\Password.class
+com\tadigital\ecommerce\dao\Dao.class
+com\tadigital\ecommerce\controller\LogoutServlet.class
+com\tadigital\ecommerce\customer\dao\UserDao.class

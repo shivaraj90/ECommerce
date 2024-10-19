@@ -1,0 +1,85 @@
+.x{margin-right:60px;}
+.y{margin-left:50px;}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 200px;
+margin: auto;
+text-align: center;
+font-family: arial;
+border-radius: 10px;
+border: 2px grey;
+padding-bottom: 5px;
+}
+.column {
+float: left;
+width: 16%;
+padding: 10px 10px;
+}
+.row
+{
+margin:auto;
+}
+
+.card button {
+border: none;
+outline: 0;
+padding: 5px;
+text-align: center;
+cursor: pointer;
+width:80%;
+font-size: 14px;
+}
+
+.card button:hover {
+opacity: 0.7;
+}
+.a{
+height:150px;
+width: 356px;
+padding-left:20px;
+
+}
+.c
+{
+padding-top: 10px;
+padding-bottom: 15px;
+background-color: black;
+color: white;
+font-size: 16px;
+padding-right: 30px;
+padding-left: 30px;
+}
+.d{
+float:right;
+}
+
+#section2 {
+background-image: url('./images/pattern1.png');
+padding-top:10px;
+padding-bottom:10px;
+}
+.n{
+font-size:18px;
+padding-left:30px;
+}
+.user1 {
+  width:260px;
+}
+.button1 {
+ background-color: white; 
+ color: rgb(138, 185, 61); 
+ width:100%;
+ border: 0px solid rgb(138, 185, 61);
+}
+.button1:hover {
+  background-color: rgba(101, 218, 85, 0.685);
+}
+.button2:hover {
+  background-color: rgba(101, 218, 85, 0.685);
+}
+.button2 {
+  background-color: white; 
+  color: rgb(138, 185, 61); 
+  border: 2px solid rgb(138, 185, 61);;
+}

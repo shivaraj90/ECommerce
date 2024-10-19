@@ -1,0 +1,50 @@
+<web-app>
+   <servlet>
+      <servlet-name>servlet1</servlet-name>
+	  <servlet-class>com.tadigital.ecommerce.customer.controller.LoginProcessServlet</servlet-class>
+   </servlet>
+   <servlet-mapping> 
+      <servlet-name>servlet1</servlet-name>
+	  <url-pattern>/loginCustomer</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>servlet2</servlet-name>
+	  <servlet-class>com.tadigital.ecommerce.customer.controller.RegistrationProcessServlet</servlet-class>
+   </servlet>
+   <servlet-mapping> 
+      <servlet-name>servlet2</servlet-name>
+	  <url-pattern>/registerCustomer</url-pattern>
+   </servlet-mapping>
+   
+    <servlet>
+      <servlet-name>servlet3</servlet-name>
+	  <servlet-class>com.tadigital.ecommerce.controller.UpdatePassword</servlet-class>
+   </servlet>
+   <servlet-mapping> 
+      <servlet-name>servlet3</servlet-name>
+	  <url-pattern>/updateCustomer</url-pattern>
+   </servlet-mapping>
+
+    <servlet>
+      <servlet-name>servlet4</servlet-name>
+	  <servlet-class>com.tadigital.ecommerce.controller.UpdatePersonalDetails</servlet-class>
+   </servlet>
+   <servlet-mapping> 
+      <servlet-name>servlet4</servlet-name>
+	  <url-pattern>/detailsCustomer</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>servlet5</servlet-name>
+	  <servlet-class>com.tadigital.ecommerce.controller.LogoutServlet</servlet-class>
+   </servlet>
+   <servlet-mapping> 
+      <servlet-name>servlet5</servlet-name>
+	  <url-pattern>/logout</url-pattern>
+   </servlet-mapping>
+   
+   <welcome-file-list>  
+     <welcome-file>index.jsp</welcome-file> 
+   </welcome-file-list>
+</web-app>

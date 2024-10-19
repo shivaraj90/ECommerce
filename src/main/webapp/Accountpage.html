@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to TA Shopping Online</title>
+  <meta name="TaProject" content="ecommerce">
+  <meta name="descrption" content="Store front for ecommerce site">
+  <link rel="icon" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Contact Us on +91 40 66217777</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="loginCustomer"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Sign In</a></li>
+          <li><a href="registerCustomer"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Vendor Sign In</a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="padding-left: 30px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/tadigital.jpg" alt="logo" style="width:110px;height:30px;">
+        </a>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="t"><a href="">Electronics
+              <i class="fa fa-caret-down"></i></a>
+          </li>
+          <li class="t"><a href="">Men
+              <i class="fa fa-caret-down"></i></a>
+          </li>
+          <li class="t"><a href="">Women
+              <i class="fa fa-caret-down"></i></a>
+          </li>
+          <li class="t"><a href="">Baby & Kids
+              <i class="fa fa-caret-down"></i></a>
+          </li>
+          <li class="t"><a href="">Home & Furniture
+              <i class="fa fa-caret-down"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="section2">
+      <b class="n">My Account</b>
+      <a href="logout" style="float:right;padding-right:20px;">Logout</a>
+      <a href="index.jsp" style="float:right;padding-right:5px;">Home&nbsp;&nbsp;&#47;&nbsp;</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-1"></div>
+
+        <div class="col-md-7">
+          <br>
+          <p>Change your personal details or your password here.</p>
+          <hr>
+          <b style="font-size:20px;">CHANGE PASSWORD</b><br>
+          <hr style=" border: 2px solid rgb(161, 207, 88);width:20%;float:left;"><br><br><br>
+          <form action="updateCustomer" method="post">
+            <table>
+              <tr>
+                <td style="padding-bottom:10px;">Old password</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;"><input type="password" name="password" /></td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;">New password<br></td>
+                <td style="padding-left:5px;padding-bottom:10px;"> Retype new password<br></td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;"><input type="password" name="newpassword" class="user" /></td>
+                <td style="padding-left:5px;padding-bottom:10px;"><input type="password" name="retypepassword" class="user" /></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center" style="padding-left:30px;padding-bottom:30px;padding-top:20px;"><button
+                    class="button2"><span class="glyphicon glyphicon-floppy-save"></span>&nbsp;Save New
+                    Password</button></td>
+              </tr>
+            </table>
+          </form>
+          <hr>
+          <b style="font-size:20px;">PERSONAL DETAILS</b><br>
+          <hr style=" border: 2px solid rgb(161, 207, 88);width:20%;float:left;"><br><br><br>
+          <form action="detailsCustomer" method="post">
+            <table>
+              <tr>
+                <td colspan="2" style="padding-bottom:10px;">First Name</td>
+                <td colspan="2" style="padding-bottom:10px;">Last Name</td>
+              </tr>
+              <tr>
+                <td colspan="2" style="padding-bottom:10px;"><input type="text" name="firstName" class="user1" /></td>
+                <td colspan="2" style="padding-bottom:10px;"><input type="text" name="lastName" class="user1" /></td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;">Gender<br></td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;"> <input type="radio" id="male" name="gender" value="male">male</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;"> <input type="radio" id="female" name="gender" value="female">female
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;"><input type="radio" id="other" name="gender"
+                    value="transgender">transgender</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;"> Address<br /></td>
+              </tr>
+              <tr>
+                <td colspan="4" style="padding-bottom:10px;"><textarea id="area" name="address" class="user" rows="5"
+                    cols="87"></textarea></td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;">City</td>
+                <td style="padding-bottom:10px;">ZIP</td>
+                <td style="padding-bottom:10px;">State</td>
+                <td style="padding-bottom:10px;">Country</td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;"><input type="text" name="city" class="user" /></td>
+                <td style="padding-bottom:10px;"><input type="number" name="zipcode" class="user" /></td>
+                <td style="padding-bottom:10px;"><select name="state" id="state" class="user">
+                    <option value="Telangana">Telangana</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Kerala">Kerala</option>
+                  </select></td>
+                <td style="padding-bottom:10px;"><select name="country" id="country" class="user">
+                    <option value="India">India</option>
+                    <option value="Sri Lanka">Sri Lanka</option>
+                    <option value="United States">United States</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <td colspan="2" style="padding-bottom:10px;">
+                  Contact Number</td>
+                <td colspan="2" style="padding-bottom:10px;">Email</td>
+              </tr>
+              <tr>
+                <td colspan="2" style="padding-bottom:10px;"><input type="number" name="number" class="user1" /></td>
+                <td colspan="2" style="padding-bottom:10px;"><input type="email" name="email" class="user1" /></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center" style="padding-left:250px;padding-bottom:30px;padding-top:20px;">
+                  <button class="button2"><span class="glyphicon glyphicon-floppy-save"></span>&nbsp;Save Changes</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+
+        </div>
+        <div class="col-md-2">
+          <BR>
+          <b style="font-size:16px;">CUSTOMER SECTION</b><br>
+          <hr style=" border: 2px solid rgb(161, 207, 88);width:50%;float:left;"><br><br><br>
+          <div class="btn-group-vertical" style="width:100%;">
+            <button type="button" class="button1"><a href="#"><span class="glyphicon glyphicon-list"></span>&nbsp;My orders</a></button><br>
+            <button type="button" class="button1"><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;My wishlist</a></button><br>
+            <button type="button" class="button1"><a href="Accountpage.html"><span class="glyphicon glyphicon-user"></span>&nbsp;My account</a></button><br>
+            <button type="button" class="button1"><a href="logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Logout</a></button><br>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="container-fluid">
+      <div class="row" style="background-color: gray;">
+        <div class="col-md-3" style="padding-left: 40px; padding-right:30px; color: white;">
+          <h5><b>About Us</b></h5>
+          <p>A global, full service digital transformation agency</p>
+          <hr>
+          <form>
+            <h5><b>Join our Monthly Newsletter</b></h5>
+            <div class="input-group">
+              <div class="input-group-btn">
+                <input type="text" class="form-control">
+                <button class="btn btn-primary" type="submit">
+                  <i class="glyphicon glyphicon-send"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <br>
+        </div>
+        <div class="col-md-3" style="padding-left: 40px; padding-right:30px; color: white;">
+          <h5><b>Blog</b></h5>
+          <img src="./images/b1.jpg" height="50px" width="50px" style="padding-bottom: 5px;"> Blog Post Name<br>
+          <img src="./images/b2.jpg" height="50px" width="50px" style="padding-bottom: 5px;"> Blog Post Name<br>
+          <img src="./images/b3.jpg" height="50px" width="50px" style="padding-bottom: 5px;"> Blog Post Name<br>
+        </div>
+        <div class="col-md-3" style="padding-left: 40px; padding-right:30px; color: white;">
+          <h5><b>Contact Us</b></h5>
+          <p>TechAspect Online Shopping<br>Plot No. 36, N Heights, 3rd Floor<br>Hitech City Phase 2,
+            Madhapur<br>Hyderabad, Telangana - 500081<br>India</p>
+          <button class="btn btn-success"><a href="Contactpage.html"> Go to Contact Page</a></button>
+        </div>
+        <div class="col-md-3" style="padding-left: 40px; padding-right:30px; padding-top:20px;color: white;">
+          <img src="./images/b1.jpg" height="55px" width="50px" style="padding-right:5px;padding-bottom: 5px;">
+          <img src="./images/b2.jpg" height="55px" width="50px" style="padding-right:5px;padding-bottom: 5px;">
+          <img src="./images/b3.jpg" height="55px" width="50px" style="padding-right:5px;padding-bottom: 5px;"><br>
+          <img src="./images/b1.jpg" height="55px" width="50px" style="padding-right:5px;">
+          <img src="./images/b2.jpg" height="55px" width="50px" style="padding-right:5px;">
+          <img src="./images/b3.jpg" height="55px" width="50px" style="padding-right:5px;"><br>
+        </div>
+      </div>
+    </div>
+    <div style="background-color:black; color: white;text-align:left;padding-left: 30px;">
+      <br><br>© 2019. TechAspect Solutions Private Limited.<br><br><br>
+    </div>
+  </footer>
+</body>
+
+</html>
